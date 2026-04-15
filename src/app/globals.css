@@ -6,14 +6,14 @@
   --font-sans: "Manrope", sans-serif;
   --font-mono: "Space Grotesk", monospace;
 
-  --color-primary: 854f5f;
-  --color-primary-container: ffb9cb;
-  --color-secondary: 5e5c78;
-  --color-tertiary: 006786;
-  --color-background: fff8f2;
-  --color-surface-low: fff2df;
-  --color-surface-highest: fbdfac;
-  --color-outline-variant: c8af80;
+  --color-primary: #854f5f;
+  --color-primary-container: #ffb9cb;
+  --color-secondary: #5e5c78;
+  --color-tertiary: #006786;
+  --color-background: #fff8f2;
+  --color-surface-low: #fff2df;
+  --color-surface-highest: #fbdfac;
+  --color-outline-variant: #c8af80;
 }
 
 @layer base {

@@ -8,6 +8,10 @@ import { Calendar as CalendarIcon, GraduationCap, CheckSquare, Bell } from 'luci
 export default function Navigation() {
   const pathname = usePathname();
 
+  if (pathname?.startsWith('/auth')) {
+    return null;
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 h-20 glass border-b border-outline-variant/20 flex items-center px-8 md:px-12 z-50">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
@@ -43,10 +47,6 @@ export default function Navigation() {
             <span className="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full border-2 border-white"></span>
           </button>
           <div className="flex items-center gap-3 pl-4 border-l border-outline-variant/20">
-            <div className="text-right hidden sm:block">
-              <p className="text-[10px] font-mono font-bold uppercase tracking-widest text-secondary/60">Scholar</p>
-              <p className="text-xs font-bold text-secondary">Julian Voss</p>
-            </div>
             <div className="w-9 h-9 rounded-lg overflow-hidden ring-2 ring-primary/10">
               <img
                 src="https://picsum.photos/seed/scholar/200/200"
